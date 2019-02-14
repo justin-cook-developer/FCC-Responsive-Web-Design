@@ -7,7 +7,7 @@
 
 #main {
   width: 95%;
-  margin: 20px auto;
+  margin: 1.5em auto;
   background-color: rgb(231, 231, 231);
   border-radius: 4px;
 }
@@ -20,16 +20,16 @@
 /* HEADER */
 header {
   margin: auto;
-  padding-top: 20px;
-  margin-bottom: 20px;
   width: 100%;
+  padding-top: 1.6em;
+  padding-bottom: 2em;
   text-align: center;
 }
 
 header #title {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-weight: 550;
+  width: 95%;
+  margin: auto;
+  margin-bottom: .8em;
 }
 
 header p {
@@ -56,39 +56,44 @@ figure #img-caption {
   width: 90%;
   margin: auto;
   text-align: center;
-  padding: 15px 0 17px 0;
+  padding: 1em 0 1.05em 0;
   font-size: 1.05em;
 }
 
 /* MAIN */
 #tribute-info {
   margin: auto;
+  margin-top: .8em;
   width: 80%;
 }
 
 main h2 {
   font-size: 1.2em;
-  margin-bottom: 7%;
-  margin-left: 5%;
+  margin-bottom: 1em;
+  margin-left: 1.2em;
 }
 
 main ul li {
   width: 90%;
-  margin-left: 7%;
-  margin-bottom: 14px;
+  margin-left: 1.4em;
+  margin-bottom: .8em;
+}
+
+.date {
+  font-weight: bold;
 }
 
 /* QUOTE CONTAINER */
 #quote-container {
   width: 75%;
   margin: auto;
-  margin-top: 7%;
-  margin-bottom: 7%;
+  margin-top: 1.7em;
+  margin-bottom: 1.9em;
   text-align: center;
 }
 
 blockquote {
-  margin-bottom: 7%;
+  margin-bottom: 1.1em;
 }
 
 cite {
@@ -103,7 +108,7 @@ footer {
   margin: auto;
   text-align: center;
   font-size: 1.1em;
-  padding-bottom: 7%;
+  padding-bottom: 1.7em
 }
 
 footer a {
