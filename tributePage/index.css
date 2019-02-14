@@ -79,4 +79,29 @@ main ul li {
 }
 
 /* QUOTE CONTAINER */
+#quote-container {
+  width: 75%;
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  text-align: center;
+}
 
+blockquote {
+  margin-bottom: 7%;
+}
+
+cite {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* FOOTER */
+footer {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1em;
+  padding-bottom: 7%;
+}
