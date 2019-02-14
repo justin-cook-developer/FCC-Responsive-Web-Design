@@ -29,7 +29,7 @@ header {
 header #title {
   width: 95%;
   margin: auto;
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
 header p {
@@ -63,7 +63,7 @@ figure #img-caption {
 /* MAIN */
 #tribute-info {
   margin: auto;
-  margin-top: .8em;
+  margin-top: 0.8em;
   width: 80%;
 }
 
@@ -76,7 +76,7 @@ main h2 {
 main ul li {
   width: 90%;
   margin-left: 1.4em;
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
 .date {
@@ -108,7 +108,7 @@ footer {
   margin: auto;
   text-align: center;
   font-size: 1.1em;
-  padding-bottom: 1.7em
+  padding-bottom: 1.7em;
 }
 
 footer a {
@@ -117,4 +117,59 @@ footer a {
 
 footer a:hover {
   color: green;
+}
+
+/* IPAD QUERY */
+@media (min-width: 768px) {
+  :root {
+    font-size: 110%;
+  }
+
+  #main {
+    width: 97%;
+    margin: 1.3em auto;
+  }
+
+  header {
+    margin: auto;
+    padding-top: 2.2em;
+    padding-bottom: 2.1em;
+  }
+
+  figure#img-div {
+    width: 97%;
+  }
+
+  #tribute-info {
+    margin-top: 0.95em;
+  }
+
+  main h2 {
+    margin-bottom: 1em;
+    margin-left: 2em;
+  }
+
+  main ul li {
+    margin-left: 2em;
+    margin-bottom: 0.9em;
+  }
+
+  #quote-container {
+    width: 89%;
+    margin-top: 1.5em;
+    margin-bottom: 1.7em;
+  }
+
+  blockquote {
+    margin-bottom: 1em;
+  }
+
+  footer {
+    width: 95%;
+  }
+}
+
+/* STANDARD LAPTOP; NOT LARGE LAPTOP */
+@media (min-width: 1024px) {
+  
 }
