@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
   <title>Survey Form</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
         <div class="input-container">
           <label for="dropdown">Which option best describes your current role?</label>
           <select id="dropdown">
-            <option>Please choose an option</option>
+            <option disabled>Please choose an option</option>
             <option value="student" selected>Student</option>
             <option value="full time job">Full Time Job</option>
             <option value="full time learner">Full Time Learner</option>
@@ -42,6 +43,64 @@
             <option value="other">Other</option>
           </select>
         </div>
+
+        <div class="input-container">
+          <label><abbr title="required">&#42;</abbr>How likely is it that you would recommend freeCodeCamp to a friend?</label>
+          <div class="radio-option">
+            <input type="radio" id="definitely" value="definitely" name="recommendation"/>
+            <label for="definitely">Definitely</label>
+          </div>
+          <div class="radio-option">
+              <input type="radio" id="maybe" value="maybe" name="recommendation"/>
+              <label for="maybe">Maybe</label>
+          </div>
+          <div class="radio-option">
+              <input type="radio" id="not" value="not" name="recommendation"/>
+              <label for="not">Not sure</label>
+          </div>
+        </div>
+
+        <div class="input-container">
+            <label for="dropdown-like">What do you like most in FCC:</label>
+            <select id="dropdown-like">
+              <option selected disabled>Please choose an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open source">Open source</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+          <label>Things that should be improved in the future(Check all that apply):</label>
+          <div class="check-option">
+            <label for="front">Front-end Projects</label>
+            <input type="checkbox" name="improve" id="front">
+          </div>
+          <div class="check-option">
+            <label for="back">Back-end Projecs</label>
+            <input type="checkbox" name="improve" id="back">
+          </div>
+          <div class="check-option">
+            <label for="data">Data Visulization</label>
+            <input type="checkbox" name="improve" id="data">
+          </div>
+          <div class="check-option">
+            <label for="challenges">Challenges</label>
+            <input type="checkbox" name="improve" id="challenges">
+          </div>
+          <div class="check-option">
+            <label for="open">Open Source Community</label>
+            <input type="checkbox" name="improve" id="open">
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="comments">Any Comments or Suggestions?</label>
+          <textarea id="comments" name="comments" rows="10" cols="10" placeholder="Enter your comments here"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
       </form>
     </div>
   </div>
