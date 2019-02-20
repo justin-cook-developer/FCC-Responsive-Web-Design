@@ -14,22 +14,22 @@
       <h1 id="title">Survey Form</h1>
     </header>
 
-    <div id="form-container">
+    <main id="form-container">
       <p id="description">Let us know how we can improve freeCodeCamp</p>
-      <form action="#" id="survey-form">
+      <form action="" method="POST" id="survey-form">
         <div class="input-container">
           <label for="name" id="name-label"><abbr title="required">&#42;</abbr>Name:</label>
           <input type="text" id="name" placeholder="Enter your name" required/>
         </div>
 
         <div class="input-container">
-          <label for="email" id="email"><abbr title="required">&#42;</abbr>Email:</label>
-          <input type="email" id="email" placeholder="Enter your name" required/>
+          <label for="email" id="email-label"><abbr title="required">&#42;</abbr>Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required/>
         </div>
 
         <div class="input-container">
           <label for="number" id="number-label"><abbr title="required">&#42;</abbr>Age:</label>
-          <input type="number" id="number" min="0" max="150" placeholder="Age" required/>
+          <input type="number" id="number" min="0" max="120" placeholder="Age" required/>
         </div>
 
         <div class="input-container">
@@ -46,17 +46,19 @@
 
         <div class="input-container">
           <label><abbr title="required">&#42;</abbr>How likely is it that you would recommend freeCodeCamp to a friend?</label>
-          <div class="radio-option">
-            <input type="radio" id="definitely" value="definitely" name="recommendation"/>
-            <label for="definitely">Definitely</label>
-          </div>
-          <div class="radio-option">
-              <input type="radio" id="maybe" value="maybe" name="recommendation"/>
-              <label for="maybe">Maybe</label>
-          </div>
-          <div class="radio-option">
-              <input type="radio" id="not" value="not" name="recommendation"/>
-              <label for="not">Not sure</label>
+          <div id="radio-options">
+            <div class="radio-option">
+              <input type="radio" id="definitely" value="definitely" name="recommendation"/>
+              <label for="definitely">Definitely</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="maybe" value="maybe" name="recommendation"/>
+                <label for="maybe">Maybe</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="not" value="not" name="recommendation"/>
+                <label for="not">Not sure</label>
+            </div>
           </div>
         </div>
 
@@ -73,36 +75,38 @@
 
         <div class="input-container">
           <label>Things that should be improved in the future(Check all that apply):</label>
-          <div class="check-option">
-            <label for="front">Front-end Projects</label>
-            <input type="checkbox" name="improve" id="front">
-          </div>
-          <div class="check-option">
-            <label for="back">Back-end Projecs</label>
-            <input type="checkbox" name="improve" id="back">
-          </div>
-          <div class="check-option">
-            <label for="data">Data Visulization</label>
-            <input type="checkbox" name="improve" id="data">
-          </div>
-          <div class="check-option">
-            <label for="challenges">Challenges</label>
-            <input type="checkbox" name="improve" id="challenges">
-          </div>
-          <div class="check-option">
-            <label for="open">Open Source Community</label>
-            <input type="checkbox" name="improve" id="open">
+          <div id="check-options">
+            <div class="check-option">
+              <label for="front">Front-end Projects</label>
+              <input type="checkbox" name="improve" id="front" value="front">
+            </div>
+            <div class="check-option">
+              <label for="back">Back-end Projecs</label>
+              <input type="checkbox" name="improve" id="back" value="back">
+            </div>
+            <div class="check-option">
+              <label for="data">Data Visulization</label>
+              <input type="checkbox" name="improve" id="data" value="data">
+            </div>
+            <div class="check-option">
+              <label for="challenges">Challenges</label>
+              <input type="checkbox" name="improve" id="challenges" value="challenges">
+            </div>
+            <div class="check-option">
+              <label for="open">Open Source Community</label>
+              <input type="checkbox" name="improve" id="open" value="open">
+            </div>
           </div>
         </div>
 
         <div class="input-container">
           <label for="comments">Any Comments or Suggestions?</label>
-          <textarea id="comments" name="comments" rows="10" cols="10" placeholder="Enter your comments here"></textarea>
+          <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
         </div>
 
         <button type="submit" id="submit">Submit</button>
       </form>
-    </div>
+    </main>
   </div>
 </body>
 </html>
