@@ -18,7 +18,7 @@ div#wrapper {
 /* ----- HEADER ----- */
 header {
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.1rem;
 }
 
@@ -36,21 +36,68 @@ p#description {
   margin-top: 0;
 }
 
-/* FORM INPUTS */
+/* FORM INPUT STYLING */
+input[type="text"], input[type="email"], input[type="number"],
+select, textarea {
+  padding: .25rem;
+  border: 1px rgb(130, 145, 145) solid;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  padding: .3rem;
+}
+select {
+  padding: .25rem;
+  background-color: white;
+}
+
+/* FORM INPUT LAYOUT */
+input, label {
+  display: block;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
+.input-container > label {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin-bottom: .7rem;
+}
+
+.input-container label abbr {
+  text-decoration: none;
+  padding-right: .1rem
+}
+
+.input-container > .inputs {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.radio-option, .check-option {
+  display: flex;
+}
+
+.radio-option label, .check-option label {
+  margin-left: .25rem;
+}
 
 /* SUBMIT BUTTON */
 button {
   display: block;
   margin: 1.1rem auto 0;
-  padding: .8rem 1.4rem;
+  padding: .6rem 1.6rem;
   font-size: .9rem;
   color: white;
   background-color: rgb(78, 185, 221);
   opacity: 95%;
   border-radius: 5px;
 }
+
