@@ -39,13 +39,13 @@ p#description {
 /* FORM INPUT STYLING */
 input[type="text"], input[type="email"], input[type="number"],
 select, textarea {
-  padding: .25rem;
   border: 1px rgb(130, 145, 145) solid;
 }
 
-input[type="text"], input[type="email"], input[type="number"] {
+input[type="text"], input[type="email"], input[type="number"], textarea {
   padding: .3rem;
 }
+
 select {
   padding: .25rem;
   background-color: white;
@@ -81,8 +81,15 @@ input, label {
   flex-basis: auto;
 }
 
+.radio-options, .check-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .radio-option, .check-option {
   display: flex;
+  margin: .4rem 0;
 }
 
 .radio-option label, .check-option label {
