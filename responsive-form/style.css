@@ -150,3 +150,34 @@ button {
     align-content: flex-start
   }
 }
+
+@media(min-width: 1023px) {
+  html {
+    font-size: 120%;
+  }
+  
+  main#form-container {
+    width: 70%;
+  }
+
+  p#description {
+    font-size: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .input-container {
+    margin-right: 11rem;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .input-container > label {
+    flex: 0;
+    flex-basis: 80%;
+  }
+
+  .input-container .inputs {
+    flex: 1;
+    flex-basis: 60%;
+  }
+}
