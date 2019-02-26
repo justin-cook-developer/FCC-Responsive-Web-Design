@@ -60,7 +60,7 @@ input, label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .input-container > label {
@@ -81,10 +81,9 @@ input, label {
   flex-basis: auto;
 }
 
-.radio-options, .check-options {
+#radio-options, #check-options {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .radio-option, .check-option {
@@ -108,3 +107,46 @@ button {
   border-radius: 5px;
 }
 
+/* MEDIA TABLET */
+@media(min-width: 767px) {
+  html {
+    font-size: 110%;
+  }
+
+  p#description {
+    margin-bottom: 2rem;
+  }
+
+  .input-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .input-container:nth-child(4), .input-container:nth-child(6) {
+    margin-bottom: 1.3rem;
+  }
+
+  .input-container > label {
+    flex: 0;
+    flex-basis: 40%;
+    padding-right: 1rem;
+    text-align: end;
+  }
+
+  .input-container .inputs {
+    flex: 1;
+    flex-basis: 60%;
+  }
+
+  .input-container select.inputs {
+    height: 2rem;
+  }
+
+  .input-container:nth-child(5) {
+    justify-content: flex-start;
+    align-content: flex-start
+  }
+}
