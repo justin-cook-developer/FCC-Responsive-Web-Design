@@ -18,23 +18,26 @@
       <p id="description">Let us know how we can improve freeCodeCamp</p>
       <form action="" method="POST" id="survey-form">
         <div class="input-container">
-          <label for="name" id="name-label"><abbr title="required">&#42;</abbr>Name:</label>
-          <input type="text" id="name" placeholder="Enter your name" required/>
+          <label for="name" id="name-label"><abbr title="required">&#42;
+</abbr>Name:</label>
+          <input type="text" class="inputs" id="name" placeholder="Enter your name" required/>
         </div>
 
         <div class="input-container">
-          <label for="email" id="email-label"><abbr title="required">&#42;</abbr>Email:</label>
-          <input type="email" id="email" placeholder="Enter your email" required/>
+          <label for="email" id="email-label"><abbr title="required">&#42;
+</abbr>Email:</label>
+          <input type="email" class="inputs" id="email" placeholder="Enter your email" required/>
         </div>
 
         <div class="input-container">
-          <label for="number" id="number-label"><abbr title="required">&#42;</abbr>Age:</label>
-          <input type="number" id="number" min="0" max="120" placeholder="Age" required/>
+          <label for="number" id="number-label"><abbr title="required">&#42;
+</abbr>Age:</label>
+          <input type="number" class="inputs" id="number" min="0" max="120" placeholder="Age" required/>
         </div>
 
         <div class="input-container">
           <label for="dropdown">Which option best describes your current role?</label>
-          <select id="dropdown">
+          <select id="dropdown" class="inputs">
             <option disabled>Please choose an option</option>
             <option value="student" selected>Student</option>
             <option value="full time job">Full Time Job</option>
@@ -45,8 +48,9 @@
         </div>
 
         <div class="input-container">
-          <label><abbr title="required">&#42;</abbr>How likely is it that you would recommend freeCodeCamp to a friend?</label>
-          <div id="radio-options">
+          <label><abbr title="required">&#42;
+</abbr>How likely is it that you would recommend freeCodeCamp to a friend?</label>
+          <div id="radio-options" class="inputs">
             <div class="radio-option">
               <input type="radio" id="definitely" value="definitely" name="recommendation"/>
               <label for="definitely">Definitely</label>
@@ -64,7 +68,7 @@
 
         <div class="input-container">
             <label for="dropdown-like">What do you like most in FCC:</label>
-            <select id="dropdown-like">
+            <select id="dropdown-like" class="inputs">
               <option selected disabled>Please choose an option</option>
               <option value="challenges">Challenges</option>
               <option value="projects">Projects</option>
@@ -74,34 +78,35 @@
         </div>
 
         <div class="input-container">
-          <label>Things that should be improved in the future(Check all that apply):</label>
-          <div id="check-options">
+          <label>Things that should be improved in the future (Check all that apply):</label>
+          <div id="check-options" class="inputs">
             <div class="check-option">
+              <input type="checkbox" name="improve" id="front"
+              value="front">
               <label for="front">Front-end Projects</label>
-              <input type="checkbox" name="improve" id="front" value="front">
             </div>
             <div class="check-option">
-              <label for="back">Back-end Projecs</label>
               <input type="checkbox" name="improve" id="back" value="back">
+              <label for="back">Back-end Projecs</label>
             </div>
             <div class="check-option">
-              <label for="data">Data Visulization</label>
               <input type="checkbox" name="improve" id="data" value="data">
+              <label for="data">Data Visulization</label>
             </div>
             <div class="check-option">
-              <label for="challenges">Challenges</label>
               <input type="checkbox" name="improve" id="challenges" value="challenges">
+              <label for="challenges">Challenges</label>
             </div>
             <div class="check-option">
-              <label for="open">Open Source Community</label>
               <input type="checkbox" name="improve" id="open" value="open">
+              <label for="open">Open Source Community</label>
             </div>
           </div>
         </div>
 
         <div class="input-container">
           <label for="comments">Any Comments or Suggestions?</label>
-          <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+          <textarea id="comments" class="inputs" name="comments" placeholder="Enter your comments here"></textarea>
         </div>
 
         <button type="submit" id="submit">Submit</button>
