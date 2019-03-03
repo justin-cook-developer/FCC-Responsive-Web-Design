@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
   <title>One-stop Trombones</title>
 </head>
 <body>
@@ -25,7 +26,8 @@
   <div id="sign-up">
     <h2>Handcrafted, home-made masterpieces</h2>
     <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
-      <input type="email" id="email" placeholder="Enter your email address" required/>
+      <label for="email" id="sr-only">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email address" required/>
       <input type="submit" id="submit"/>
     </form>
   </div>
