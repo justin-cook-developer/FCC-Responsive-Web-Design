@@ -11,6 +11,7 @@
   box-sizing: border-box;
   background-color: #e8e9ea;
   --complementary-gray: #dbdbdf;
+  --button-color: rgb(236, 217, 47);
   font-family: 'Raleway', sans-serif;
   color: black;
 }
@@ -29,12 +30,20 @@ button, input[type="submit"] {
   width: 80%;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* -------------------- HEADER -------------------- */
 header {
   width: 100%;
   position: fixed;
   top: 0;
-  margin: 0 1% 0 2%;
+  margin: 0 5% 0 2%;
   padding: 1% 0;
   display: flex;
   flex-direction: row;
@@ -48,7 +57,7 @@ header #header-img {
 }
 
 #nav-bar {
-  width: 40%;
+  flex-basis: 40%;
 }
 
 #nav-bar ul {
@@ -60,18 +69,9 @@ header #header-img {
   align-items: center;
 }
 
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-
 /* -------------------- SIGN-UP BOX -------------------- */
 #sign-up {
-  margin: 5% auto 6%;
+  margin: 5% auto;
   width: 50%;
   text-align: center;
 }
@@ -93,11 +93,11 @@ nav ul li a {
 #form input[type="email"] {
   background-color: white;
   width: 35%;
-  padding: .4rem .4rem;
+  padding: .4rem;
 }
 
 #form input[type="submit"] {
-  background-color: rgb(236, 217, 47);
+  background-color: var(--button-color);
   width: auto;
   padding: .3rem 1.2rem;
   font-size: 1rem;
@@ -144,7 +144,6 @@ i {
 #video {
   display: block;
   margin: 0 auto 7%;
-
 }
 
 /* -------------------- CARDS -------------------- */
@@ -182,18 +181,16 @@ i {
   text-transform: uppercase;
 }
 
-
 .card p {
   margin-bottom: 3%;
 }
-
 
 .card .paragraphs {
   margin-bottom: 10%;
 }
 
 .card button {
-  background-color: rgb(236, 217, 47);
+  background-color: var(--button-color);
   font-size: 1.3rem;
   padding: .3rem 1.2rem;
   margin-bottom: 5%;
@@ -223,9 +220,4 @@ footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  list-style: none;
-}
-
-footer ul a {
-  text-decoration: none;
 }
