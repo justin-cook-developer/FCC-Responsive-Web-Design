@@ -100,3 +100,28 @@ nav ul li a {
 }
 
 /* --------------------  CARDS -------------------- */
+.features {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.feature {
+  margin-bottom: 3%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.information {
+  flex-basis: 70%;
+  align-self: top;
+  text-align: left;
+}
+
+i {
+  display: block;
+  align-self: center;
+  color: orange;
+  transform: scale(2);
+}
