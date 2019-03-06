@@ -221,3 +221,77 @@ footer ul {
   flex-direction: row;
   justify-content: space-around;
 }
+
+/* LAPTOP QUERY */
+@media screen and (min-width: 1020px) and (max-width: 1440px) {
+  /* ---------- HEADER ---------- */
+  header {
+    padding-left: 1.5%;
+    padding-right: 3%;
+  }
+  header #header-img {
+    height: 2.2rem;
+  }
+  #nav-bar ul {
+    font-size: 1.1rem;
+  }
+  /* ---------- SIGN-UP BOX ---------- */
+  #sign-up {
+    margin: 6% auto;
+  }
+  #form input[type="email"] {
+    width: 40%;
+    padding: .5rem;
+  }
+  /* ---------- FEATURES ---------- */
+  #features {
+    margin: 0 auto 7%;
+    width: 75%;
+  }
+  .information {
+    flex-basis: 85%;
+  }
+  .information h2 {
+    font-size: 1.4rem;
+  }
+  .information p {
+    font-size: 1rem;
+  }
+  i {
+    transform: scale(2.4);
+  }
+  /* ---------- YOUTUBE VIDEO ---------- */
+  #video {
+    width: 50%;
+  }
+  /* ---------- CARDS ---------- */
+  #cards {
+    width: 85%;
+    margin: 0 auto 5%;
+  }
+  .card h3 {
+    margin-bottom: 6%;
+  }
+  .card .price {
+    margin-bottom: 7%;
+  }
+  .card p {
+    margin-bottom: 5%;
+  }
+  .card .paragraphs {
+    margin-bottom: 11%;
+  }
+  .card button {
+    font-size: 1.4rem;
+    padding: .4rem 1.4rem;
+    margin-bottom: 6%;
+  }
+  /* ---------- FOOTER ---------- */
+  footer {
+    width: 67%;
+  }
+  footer ul {
+    width: 30%;
+    padding-bottom: .7rem;
+  }
+}
