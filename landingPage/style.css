@@ -10,7 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #e8e9ea;
-  --complementary-gray: #d0d4d8;
+  --complementary-gray: #dbdbdf;
   font-family: 'Raleway', sans-serif;
   color: black;
 }
@@ -18,6 +18,10 @@
 /* -------------------- GLOBAL STYLES -------------------- */
 .bold {
   font-weight: 800;
+}
+
+button, input[type="submit"] {
+  cursor: pointer;
 }
 
 #content {
@@ -67,13 +71,14 @@ nav ul li a {
 
 /* -------------------- SIGN-UP BOX -------------------- */
 #sign-up {
-  margin: 5% auto 7%;
+  margin: 5% auto 6%;
   width: 50%;
   text-align: center;
 }
 
 #sign-up h2 {
   margin-bottom: 2%;
+  font-size: 1.7rem;
 }
 
 #form {
@@ -99,14 +104,14 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-/* --------------------  CARDS -------------------- */
-.features {
-  margin: 0 auto;
-  width: 60%;
+/* --------------------  FEATURES -------------------- */
+#features {
+  margin: 0 auto 6%;
+  width: 55%;
 }
 
 .feature {
-  margin-bottom: 3%;
+  margin-bottom: 6%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -114,9 +119,18 @@ nav ul li a {
 }
 
 .information {
-  flex-basis: 70%;
+  flex-basis: 80%;
   align-self: top;
   text-align: left;
+}
+
+.information h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.information p {
+  font-weight: 500;
 }
 
 i {
@@ -124,4 +138,94 @@ i {
   align-self: center;
   color: orange;
   transform: scale(2);
+}
+
+/* -------------------- YOUTUBE VIDEO -------------------- */
+#video {
+  display: block;
+  margin: 0 auto 7%;
+
+}
+
+/* -------------------- CARDS -------------------- */
+#cards {
+  width: 75%;
+  margin: 0 auto 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  flex-basis: 30%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.card h3, .card p {
+  margin: 0 auto;
+}
+
+.card h3 {
+  padding: 5% 0;
+  margin-bottom: 5%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: var(--complementary-gray);
+}
+
+.card .price {
+  margin-bottom: 6%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.card p {
+  margin-bottom: 3%;
+}
+
+
+.card .paragraphs {
+  margin-bottom: 10%;
+}
+
+.card button {
+  background-color: rgb(236, 217, 47);
+  font-size: 1.3rem;
+  padding: .3rem 1.2rem;
+  margin-bottom: 5%;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  width: 60%;
+  margin: auto;
+  padding: 1rem 2rem 1rem 0;
+  background-color: var(--complementary-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer ul, footer li, footer li a, footer p {
+  background-color: inherit;
+}
+
+footer ul {
+  width: 20%;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer ul a {
+  text-decoration: none;
 }
