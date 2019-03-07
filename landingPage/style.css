@@ -43,6 +43,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
   margin: 0 5% 0 2%;
   padding: 1% 0;
   display: flex;
@@ -237,7 +238,7 @@ footer ul {
   }
   /* ---------- SIGN-UP BOX ---------- */
   #sign-up {
-    margin: 6% auto;
+    margin: 7% auto 6%;
   }
   #form input[type="email"] {
     width: 40%;
@@ -293,5 +294,143 @@ footer ul {
   footer ul {
     width: 30%;
     padding-bottom: .7rem;
+  }
+}
+
+
+/* -------------------- TABLET QUERY -------------------- */
+@media screen and (min-width: 650px) and (max-width: 1019px) {
+  /* ---------- HEADER ---------- */
+  header {
+    padding: 2% 5% 0 1%;
+  }
+  /* ---------- SIGN-UP BOX ---------- */
+  #sign-up {
+    margin: 9% auto 6%;
+    width: 60%;
+    text-align: center;
+  }
+  #sign-up h2 {
+    margin-bottom: 4%;
+  }
+  #form input[type="email"] {
+    width: 60%;
+    padding-right: 1rem;
+    margin-bottom: 4%;
+  }
+  /* ---------- FEATURES ---------- */
+  #features {
+    margin: 0 auto 9%;
+    width: 100%;
+  }
+  .information {
+    text-align: left;
+    flex-basis: 85%;
+  }
+  /* ---------- YOUTUBE VIDEO ---------- */
+  #video {
+    width: 75%;
+  }
+  /* ---------- CARDS ---------- */
+  #cards {
+    width: 100%;
+    margin: 9% auto 5%;
+    justify-content: space-between;
+  }
+  .card {
+    flex-basis: 32%;
+  }
+  /* ---------- FOOTER ---------- */
+  footer {
+    width: 82%;
+  }
+  footer ul {
+    width: 30%;
+    padding-bottom: .7rem;
+  }
+}
+
+/* -------------------- MOBILE QUERY -------------------- */
+@media screen and (max-width: 649px) {
+  /* ---------- HEADER ---------- */
+  header {
+    margin: 0 5% 0 2%;
+    padding: 1% 0;
+    height: 14vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  header #header-img {
+    width: 70%;
+  }
+  #nav-bar {
+    flex-basis: 60%;
+  }
+  #nav-bar ul {
+    flex-direction: column;
+  }
+  /* ---------- SIGN-UP BOX ---------- */
+  #sign-up {
+    margin: 16.5vh auto 10%;
+    width: 90%;
+  }
+  #sign-up h2 {
+    margin-bottom: 7%;
+    font-size: 1.7rem;
+  }
+  #form input {
+    margin: 7% auto;
+  }
+  #form input[type="email"] {
+    width: 70%;
+    font-size: .9rem;
+  }
+  #form input[type="submit"] {
+    font-size: 1.2rem;
+  }
+  /* ---------- FEATURES ---------- */
+  #features {
+    margin: 0 auto 15%;
+    width: 100%;
+  }
+  .feature {
+    margin-bottom: 10%;
+    justify-content: center;
+  }
+  .information {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  i {
+    flex-basis: 0%;
+    color: transparent;
+    transform: scale(0);
+  }
+  /* ---------- YOUTUBE VIDEO ---------- */
+  #video {
+    width: 100%;
+  }
+  /* ---------- CARDS ---------- */
+  #cards {
+    width: 90%;
+    margin: 0 auto 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .card {
+    margin-bottom: 5%;
+  }
+  /* ---------- FOOTER ---------- */
+  footer {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul {
+    width: 79%;
+    padding-bottom: 1rem;
+    justify-content: space-between;
   }
 }
