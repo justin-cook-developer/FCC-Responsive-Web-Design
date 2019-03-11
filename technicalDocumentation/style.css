@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
 }
 
 body {
@@ -76,6 +77,29 @@ body {
   margin: auto;
 }
 
+.main-section div * {
+  margin-bottom: 1.2rem;
+  margin-left: .2rem;
+}
+
+.main-section div ul {
+  padding-left: 1.9rem;
+}
+
+pre {
+  display: block;
+  width: 90%;
+  padding-top: 1.2rem;
+  padding-right: 0;
+  line-height: 1.8;
+  background-color: rgb(237, 233, 233);
+  border: .1px solid transparent;
+  border-radius: 6px;
+}
+
 code {
   display: block;
+  background-color: rgb(237, 233, 233);
+  padding: .5rem;
+  padding-right: 0;
 }
